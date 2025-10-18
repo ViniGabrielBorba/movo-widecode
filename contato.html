@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - WideCodeBR | Fale Conosco e Solicite Seu Orçamento</title>
+  <meta name="description" content="Entre em contato com a WideCodeBR. Solicite seu orçamento gratuito, tire dúvidas ou agende uma reunião. Estamos prontos para ajudar seu negócio.">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-brand">
+        <h1>WideCode<span class="brand-accent">BR</span></h1>
+        <span class="brand-tagline">DEVELOPMENT</span>
+      </div>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="serviços.html" class="nav-link">Serviços</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="serviços.html" class="mobile-nav-link">Serviços</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="sobre.html" class="mobile-nav-link">Sobre</a>
+      <a href="contato.html" class="mobile-nav-link active">Contato</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-icon">💬</span>
+            <span>Fale Conosco</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Vamos <span class="gradient-text">conversar</span> sobre 
+            <span class="highlight-text">seu projeto</span>
+          </h1>
+          
+          <p class="hero-description">
+            Estamos aqui para ajudar! Entre em contato conosco para 
+            solicitar um orçamento, tirar dúvidas ou agendar uma reunião. 
+            Resposta garantida em até 2 horas.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="https://wa.me/5581994201799?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20desenvolvimento%20web" class="btn btn-primary">
+              <span>WhatsApp Direto</span>
+              <span class="btn-icon">💬</span>
+            </a>
+            <a href="tel:+5581994201799" class="btn btn-secondary">
+              <span>Ligar Agora</span>
+              <span class="btn-icon">📞</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="hero-mockup">
+            <div class="mockup-browser">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="browser-url">contato.widecodebr.com</div>
+              </div>
+              <div class="browser-content">
+                <div class="mockup-header">
+                  <div class="mockup-logo"></div>
+                  <div class="mockup-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="mockup-contact">
+                  <div class="mockup-form">
+                    <div class="mockup-input"></div>
+                    <div class="mockup-input"></div>
+                    <div class="mockup-textarea"></div>
+                    <div class="mockup-button"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+    <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Entre em <span class="gradient-text">Contato</span></h2>
+        <p class="section-subtitle">Escolha a forma mais conveniente para você</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <h3>Solicite seu orçamento</h3>
+          <p>Preencha o formulário e entraremos em contato em até 2 horas</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nome completo *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Telefone/WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Empresa</label>
+              <input type="text" id="company" name="company">
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Tipo de serviço *</label>
+              <select id="service" name="service" required>
+                <option value="">Selecione uma opção</option>
+                <option value="site-institucional">Site Institucional</option>
+                <option value="landing-page">Landing Page</option>
+                <option value="sistema-web">Sistema Web</option>
+                <option value="e-commerce">E-commerce</option>
+                <option value="consultoria">Consultoria Digital</option>
+                <option value="manutencao">Manutenção & Suporte</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="budget">Orçamento estimado</label>
+              <select id="budget" name="budget">
+                <option value="">Selecione uma faixa</option>
+                <option value="ate-1000">Até R$ 1.000</option>
+                <option value="1000-3000">R$ 1.000 - R$ 3.000</option>
+                <option value="3000-5000">R$ 3.000 - R$ 5.000</option>
+                <option value="5000-10000">R$ 5.000 - R$ 10.000</option>
+                <option value="acima-10000">Acima de R$ 10.000</option>
+                <option value="nao-sei">Não sei</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Descreva seu projeto *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Conte-nos sobre seu projeto, objetivos e expectativas..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-large">
+              <span>Enviar Solicitação</span>
+              <span class="btn-icon">🚀</span>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Outras formas de contato</h3>
+          <p>Prefere falar diretamente? Use um dos canais abaixo:</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">📱</div>
+              <div class="method-content">
+                <h4>WhatsApp</h4>
+                <p>Resposta rápida e direta</p>
+                <a href="https://wa.me/5581994201799?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20desenvolvimento%20web" class="method-link">
+                  (81) 99420-1799
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div class="method-content">
+                <h4>Telefone</h4>
+                <p>Segunda a sexta, 8h às 18h</p>
+                <a href="tel:+5581994201799" class="method-link">
+                  (81) 99420-1799
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">✉️</div>
+              <div class="method-content">
+                <h4>E-mail</h4>
+                <p>Resposta em até 4 horas</p>
+                <a href="mailto:contato@widecodebr.com" class="method-link">
+                  contato@widecodebr.com
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📍</div>
+              <div class="method-content">
+                <h4>Localização</h4>
+                <p>Recife, PE - Brasil</p>
+                <span class="method-text">Alto Novo Mundo, 153 - CEP: 52081-050</span>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📷</div>
+              <div class="method-content">
+                <h4>Instagram</h4>
+                <p>Acompanhe meu trabalho</p>
+                <a href="https://instagram.com/widecodebr" target="_blank" class="method-link">
+                  @widecodebr
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-guarantee">
+            <h4>Nossa garantia</h4>
+            <ul>
+              <li>✅ Resposta em até 2 horas</li>
+              <li>✅ Orçamento gratuito e sem compromisso</li>
+              <li>✅ Consultoria inicial sem custo</li>
+              <li>✅ Suporte durante todo o projeto</li>
+            </ul>
+          </div>
+          
+          <div class="map-container">
+            <h4>Onde me encontrar</h4>
+            <div class="map-wrapper">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.123456789!2d-34.123456789!3d-8.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAlto%20Novo%20Mundo%2C%20153!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="200" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <p class="map-address">📍 Alto Novo Mundo, 153 - CEP: 52081-050, Recife - PE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+        <p class="section-subtitle">Tire suas dúvidas antes de entrar em contato</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Quanto tempo leva para desenvolver um site?</h3>
+          <p>O prazo varia conforme a complexidade do projeto. Sites institucionais simples levam de 7 a 15 dias, enquanto sistemas mais complexos podem levar de 30 a 60 dias. Sempre entregamos dentro do prazo acordado.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Vocês oferecem suporte após a entrega?</h3>
+          <p>Sim! Oferecemos 30 dias de suporte gratuito após a entrega e planos de manutenção mensal para quem deseja suporte contínuo e atualizações regulares.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>O orçamento é realmente gratuito?</h3>
+          <p>Sim, nosso orçamento é 100% gratuito e sem compromisso. Analisamos seu projeto e enviamos uma proposta detalhada sem nenhum custo.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Vocês trabalham com empresas de outras cidades?</h3>
+          <p>Sim! Trabalhamos com clientes de todo o Brasil. Utilizamos ferramentas de comunicação online para reuniões e acompanhamento do projeto.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Posso ver o progresso do meu projeto?</h3>
+          <p>Claro! Mantemos você informado sobre cada etapa do desenvolvimento através de relatórios semanais e acesso a uma área de acompanhamento online.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Que tecnologias vocês utilizam?</h3>
+          <p>Utilizamos as tecnologias mais modernas do mercado: React, Vue.js, Node.js, Python, WordPress, e outras, sempre escolhendo a melhor opção para cada projeto.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para começar seu projeto?</h2>
+        <p>Entre em contato agora e vamos transformar sua ideia em realidade</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5581994201799?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20desenvolvimento%20web" class="btn btn-primary btn-large">
+            <span>WhatsApp Direto</span>
+            <span class="btn-icon">💬</span>
+          </a>
+          <a href="tel:+5581994201799" class="btn btn-outline">
+            <span>Ligar Agora</span>
+            <span class="btn-icon">📞</span>
+          </a>
+        </div>
+        <div class="cta-guarantee">
+          <span class="guarantee-icon">✅</span>
+          <span>Resposta em 2 horas • Orçamento gratuito • Sem compromisso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>WideCode<span class="brand-accent">BR</span></h3>
+          <p>Transformando ideias em soluções digitais de sucesso</p>
+          <div class="footer-contact">
+            <a href="tel:+5581994201799">📞 (81) 99420-1799</a>
+            <a href="mailto:contato@widecodebr.com">✉️ contato@widecodebr.com</a>
+          </div>
+  </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Serviços</h4>
+            <a href="serviços.html">Sites Institucionais</a>
+            <a href="serviços.html">Landing Pages</a>
+            <a href="serviços.html">Sistemas Web</a>
+            <a href="serviços.html">Consultoria</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contato.html">Contato</a>
+            <a href="politica.html">Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 WideCodeBR. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ em Pernambuco, Brasil</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
